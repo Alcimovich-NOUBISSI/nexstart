@@ -10,7 +10,7 @@
   </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg position-absolute bg-body-tertiary w-100">
+    <nav id="navbar" class="navbar navbar-expand-lg position-absolute bg-body-tertiary w-100">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,86 +83,109 @@
       </section>
 
       <section id="FAQ" >
-        <div class="faq position-relative p-3 ">
-          <h2 class="text-center mb-5">F.A.Q</h2>
+        <div class="faq position-relative p-3 py-5 ">
+          <h2 class="text-center p-3" >Prêt à découvrir votre nouvelle oportunité professionnelle?</h2>
+          <p className='text-center' >
+            Postuler maintenant et prenez le premier pas vers une carrière enrichissante! 
+            Profiter de nos opportunités demploi variées et trouvez le poste qui correspond à vos compétences et à vos ambitions professionnelles.
+            Chez <b>NextStep</b>, nous nous engageons à simplifier votre recherche demploie et à vous offrir un accompagement
+            personnalisé tout au long de votre parcours.
+          </p>
+          <h2 class="text-center mb-3">F.A.Q</h2>
           <div class="accordion">
-            <div class="heading">Accordion #1</div>
-            <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="heading">Comment puis-je postuler à un emploi sur votre site?</div>
+              <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
         
-            <div class="heading">Accordion #2</div>
-            <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="heading">Quelles informations dois-je fournir dans mon profil candidat?</div>
+              <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
         
-            <div class="heading">Accordion #3</div>
-            <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="heading">Quelles informations dois-je fournir dans mon profil candidat?</div>
+              <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+
+            <div class="heading">Comment savoir si mon CV a été soumis avec succès?</div>
+              <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+
+            <div class="heading">Sous quel format de fichier envoyer mon CV?</div>
+              <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+
+            <div class="heading">Doit-on créer un compte pour postuler?</div>
+              <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
           </div>
         </div>
       </section>
 
       <section id="Contact" > 
-        <div 
-            class="d-block d-md-flex flex-row"
-        >
-            <div 
-                class="d-flex align-items-center p-1 row mx-auto"
-            >
-                <form  class="border rounded mx-auto container p-3 col-xxl-9 w-100 ">
-                    <div class="row mb-3">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nom" aria-label="First name" required/>
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Prénom" aria-label="Last name"/>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Adresse mail" required/>
-                    </div>
-                    <div class="mb-3">
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Domainde de compétence" required/>
-                        <datalist id="datalistOptions">
-                            <option value="Marketing"/>
-                            <option value="Informatique"/>
-                            <option value="Mécanique"/>
-                            <option value="Soudure"/>
-                            <option value="Chaudronerie"/>
-                        </datalist>
-                    </div>
-                    <div class="mb-3">
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Votre niveau d'étude" required/>
-                        <datalist id="datalistOptions">
-                            <option value="Licence"/>
-                            <option value="Master"/>
-                            <option value="Ingénieur"/>
-                            <option value="DUT"/>
-                            <option value="BTS"/>
-                        </datalist>
-                    </div>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label">Importez votre CV</label>
-                        <input class="form-control" type="file" id="formFile"/>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-10 ">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1"/>
-                            <label 
-                            class="form-check-label font-weight-lighter " for="gridCheck1"
-                            
-                            >
-                            Je reconnais que toutes les informations entrées ci-dessus sont vraies.
-                            </label>
-                        </div>
-                        </div>
-                    </div>
-                    <div  >
-                        <button type="submit" class="btn btn-primary">Soumettre mon dossier</button>
-                    </div>
-                </form>
+        <div class="contact  p-3">
+            <div class="d-flex align-items-center p-1 row mx-auto">
+              <h1 class="text-center p-3" >Soumettre mon dossier</h1>
+              <form  class="form border border-danger rounded mx-auto container p-3 col-xxl-9 w-100 ">
+                  <div class="row mb-3">
+                      <div class="col">
+                          <input type="text" class="form-control" placeholder="Nom" aria-label="First name" required/>
+                      </div>
+                      <div class="col">
+                          <input type="text" class="form-control" placeholder="Prénom" aria-label="Last name"/>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Adresse mail" required/>
+                  </div>
+                  <div class="mb-3">
+                      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Domainde de compétence" required/>
+                      <datalist id="datalistOptions">
+                          <option value="Marketing"/>
+                          <option value="Informatique"/>
+                          <option value="Mécanique"/>
+                          <option value="Soudure"/>
+                          <option value="Chaudronerie"/>
+                      </datalist>
+                  </div>
+                  <div class="mb-3">
+                      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Votre niveau d'étude" required/>
+                      <datalist id="datalistOptions">
+                          <option value="Licence"/>
+                          <option value="Master"/>
+                          <option value="Ingénieur"/>
+                          <option value="DUT"/>
+                          <option value="BTS"/>
+                      </datalist>
+                  </div>
+                  <div class="mb-3">
+                      <label for="formFile" class="form-label">Importez votre CV</label>
+                      <input class="form-control d-none" type="file" id="formFile"/>
+                  </div>
+                  <div class="row mb-3">
+                      <div class="col-sm-10 ">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1"/>
+                          <label 
+                          class="form-check-label font-weight-lighter " for="gridCheck1"
+                          
+                          >
+                          Je reconnais que toutes les informations entrées ci-dessus sont vraies.
+                          </label>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="w-100" >
+                      <button type="submit" class="btn btn-primary">Valider</button>
+                  </div>
+              </form>
             </div>
-            <div  
-                class="d-none d-md-flex align-items-center"
-            >
-                <h3></h3>
+            <div class="" >
+              <h2 class="text-center p-3" >Prêt à découvrir votre nouvelle oportunité professionnelle?</h2>
+              <p className='text-center' >
+                Postuler maintenant et prenez le premier pas vers une carrière enrichissante! 
+                Profiter de nos opportunités demploi variées et trouvez le poste qui correspond à vos compétences et à vos ambitions professionnelles.
+                Chez <b>NextStep</b>, nous nous engageons à simplifier votre recherche demploie et à vous offrir un accompagement
+                personnalisé tout au long de votre parcours.
+              </p>
             </div>
         </div>
       </section>
