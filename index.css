@@ -69,7 +69,7 @@ h1 {
 }
 
 
-.faq, .contact {
+ .contact {
     height: 100vh;
     overflow: hidden;
 }
