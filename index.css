@@ -68,21 +68,8 @@ h1 {
     margin: 50px 0;
 }
 
-
- .contact {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-
-
-.header {
+.header,
+.contact {
     height: 100vh;
     width: 100%;
 }
