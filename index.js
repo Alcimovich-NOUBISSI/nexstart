@@ -9,18 +9,31 @@ $(document).ready(function(){
     });
 });
 
-// window.onscroll = function() {myFunction()};
 
-// // Get the navbar
+// var lastScrollTop = 0;
 // var navbar = document.getElementById("navbar");
 
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//     console.log(window.scrollY);
-//   if (window.scrollY >= 0) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
+// $(window).scroll(function() {
+//     var currentScroll = $(this).scrollTop();
+    
+//     if (currentScroll > lastScrollTop) {
+//         // User is scrolling down
+//         console.log(window.scrollY)
+//         console.log('Scrolling down');
+//         navbar.classList.remove("sticky-top")
+//     } else {
+//         // User is scrolling up
+//         console.log('Scrolling up');
+//         console.log(window.scrollY)
+//         navbar.classList.add("sticky-top");
+//         navbar.classList.remove("position-absolute")
+//     }
+
+//     if (currentScroll == 0 ) {
+//         navbar.classList.add("position-absolute")
+//     }
+    
+//     lastScrollTop = currentScroll;
+// });
+
         
